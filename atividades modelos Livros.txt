@@ -1,0 +1,107 @@
+modelo livro
+	
+
+inicio
+	dados titulo, ano, autor, editora, isbn;
+
+	livroBasico
+		inicio
+			isbn = isbn;
+			titulo = titulo;
+			ano = ano;
+			autor = autor;
+			editora = editora;
+		fim
+fim
+
+----------------------------------------------------------
+
+modelo LivroDeLivraria
+
+
+inicio
+	dados titulo, ano, autor, editora, isbn, valor, qtd;
+
+	inicializarLivroBasico(Isbn, Titulo, Autor, Editora, valorLivro, qtde)
+		inicio
+			isbn = Isbn;
+			titulo = Titulo;
+			ano = Ano;
+			autor = Autor;
+			editora = Editora;
+			valor = valorLivro;
+			qtd = qtde;
+		fim
+
+	operacao LivroDisp(quantidade)
+		inicio
+			if (qtd <= 0)
+				println ("Livro indisponivel para venda");
+			else 
+				("Livro disponivel, quantidade: ") + qtd;
+			end
+		fim
+	
+	operacao LivroVenda(quantidade)
+		inicio
+			if (quantidade <= qtd)
+				qtd = (qtd - quantidade);
+				println (quantidade * valor);
+			end
+		fim
+
+	operacao CompraLivro(quantidade)
+		inicio
+			qtd = (qtd + quantidade);
+		fim
+	
+	operacao reajustePreco()
+		inicio
+			valor = (valor + (valor * percentual);
+		fim
+	
+fim
+
+------------------------------------------------------------------------------------
+
+modelo LivroDeBiblioteca
+
+inicio
+	dados isbn, titulo, autor, editora, qtd, dataEmprest, DataDevolve, multa, usuario, multaPag;
+
+
+	inicializar livroBiblioteca
+		inicio
+			isbn = Isbn;
+			titulo = Titulo;
+			autor = Autor;
+			editora = Editora;
+			qtd = qtde;
+			multa = 10;
+		fim
+
+	operacao emprestimo(data)
+		inicio
+			if (qtd > 0)
+				inicio
+					qtd = (qtd - 1)
+					dataEmprest = data;
+					dataDevolve = data + 7;
+				fim
+			else
+				println ("livro atualmente indisponivel");
+			fim
+
+	operacao devolucao(data)
+		inicio
+			while (data > dataDevolve)
+				inicio
+					usuario = (multa + 2);
+				
+			if (multaPag)
+				inicio
+					println ("Pagamento da multa efetuado");
+					break;
+				fim
+		fim
+fim
