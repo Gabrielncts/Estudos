@@ -1,0 +1,47 @@
+modelo restaurante
+inicio
+	dados numMesa, kg, qtdSobremesa, qtdRefri, qtdCerv, total, numPessoas, totalPessoas;	valKg = 30.00; valSobremesa = 6.00; valRefri = 5.00; valCerv = 10.00;
+
+	
+	OP. adcNumPessoas(num)
+	 inicio
+		 numPessoas = numPessoas + num;
+
+
+	OP. adcComida(peso)
+	 inicio
+		 Kg = Kg + peso;
+	 fim
+
+	OP. adcSobremesa(qtd)
+	 inicio
+		 qtdSobremesa = qtdSobremesa + qtd;
+	 fim
+	
+	OP. adcRefri(qtd)
+	 inicio
+		 qtdRefri = qtdRefri + qtd;
+	 fim
+
+	OP. adcCerv(qtd)
+	 inicio
+		 qtdCerv = qtdCerv + qtd;
+	 fim
+
+
+	OP. fechaConta
+	 inicio
+		 total = (Kg * valKg) + (qtdSobremesa * valSobremesa) + (qtdRefri * valRefri) + (qtdCerv * valCerv);
+	 fim
+
+
+	OP. dividirPorPessoas
+	 inicio
+		 totalPessoas = (total / numPessoas);
+	 fim
+
+
+	OP. NotaFiscal
+	 inicio
+		 Print("O Valor da conta é: " + total);
+		 Print("O valor por pessoa é: " totalPessoas);
