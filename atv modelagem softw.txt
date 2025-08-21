@@ -1,5 +1,14 @@
 atividade modelagem de software.
 
+1- forneça uma serie de exemplos que indiquem o impacto do software em nossa sociedade.
+2- considere as sete categorias de software apresentadas. Voce acha que a mesma abordagem em relação a engenharia de
+	software pode ser aplicada a cada uma delas?
+3- por que os modelos são importantes no trabalho de engenharia de software? elas são sempre necessarias?
+4- quais são os tres dominios considerados durante a modelagem de requisitos?
+
+RESPS ----------------------------------------------------------------------------------------
+
+
 1- impulsiona inovação, otimiza processos, melhora comunicação e acesso a informação e educação
 
 2- sim
@@ -11,4 +20,5 @@ atividade modelagem de software.
 	1- foca em entender o que o sistema precisa fazer para atender as necessidades do usuário;
 	2- foca em como o sistema vai realizar as funcionalidades necessarias para atender as necessidades no dominio do
 		problema;
+
 	3- lida com detalhes tecnicos da implementação do sistema.
