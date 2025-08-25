@@ -1,0 +1,43 @@
+modelo contaBancaria
+
+inicio
+	dados nometitular, numconta, saldoconta, cpf;
+
+
+	OP. inicializaDados(nome, num, saldo, CPF)
+		inicio
+			nometitular = nome;
+			numconta = num;
+			saldoconta = saldo;
+			cpf = CPF;
+		fim
+
+
+	op. EmitirSaldo();
+		inicio
+			print ("Nome: " + nometitular);
+			print ("CPF: " + cpf);
+			print ("Conta: " + numconta);
+			print ("Saldo: ") + saldoconta);
+		fim
+
+
+	op. Deposito(quantia);
+		inicio
+			saldoconta = saldoconta + quantia;
+		fim
+
+
+	op. Retirada(quantia);
+		inicio
+			if (saldoconta <= quantia)
+				inicio
+					print ("Saldo da conta insuficiente para operacao");
+				fim
+			else
+				inicio
+					saldoconta = (saldoconta - quantia);
+				fim
+		fim
+
+fim
